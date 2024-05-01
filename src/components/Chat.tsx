@@ -25,7 +25,7 @@ export function Chat() {
     ],
   });
   return (
-    <Card className="sm:w-3/4">
+    <Card className="sm:w-3/4 bg-zinc-300">
       <CardHeader>
         <CardTitle>Chat AI</CardTitle>
         <CardDescription>
@@ -79,6 +79,7 @@ export function Chat() {
             placeholder="How can i help you?"
             value={input}
             onChange={handleInputChange}
+            className=" bg-slate-100"
           />
           <Button type="submit">Send</Button>
         </form>
