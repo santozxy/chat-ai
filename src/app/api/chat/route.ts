@@ -11,7 +11,7 @@ export const runtime = "edge";
 export async function POST(req: Request) {
   const { messages } = await req.json();
   const response = await openaiApi.createChatCompletion({
-    model: "gpt-3.5-turbo",
+    model: "whisper-1",
     stream: true,
     messages: messages,
   });
